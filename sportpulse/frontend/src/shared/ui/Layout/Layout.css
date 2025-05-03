@@ -1,0 +1,24 @@
+/* Layout.css */
+.sport-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #0a0e17;
+  color: white;
+  background-image: 
+    radial-gradient(circle at 50% 0, rgba(24, 72, 176, 0.1), transparent 70%),
+    radial-gradient(circle at 10% 90%, rgba(176, 24, 72, 0.1), transparent 50%);
+}
+
+.sport-main {
+  flex: 1;
+  padding-top: 80px; /* Пространство для фиксированного навбара */
+  padding-bottom: 2rem;
+}
+
+.sport-footer {
+  margin-top: auto;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 10px 0;
+} 

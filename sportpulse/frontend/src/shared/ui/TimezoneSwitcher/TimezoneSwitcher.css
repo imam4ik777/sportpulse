@@ -1,0 +1,59 @@
+.timezone-switcher {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  padding: 0.5rem;
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.timezone-label {
+  margin-right: 0.75rem;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.timezone-select {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: var(--text-color);
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  outline: none;
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 0.5rem center;
+  background-size: 1em;
+  padding-right: 2.5rem;
+  cursor: pointer;
+}
+
+.timezone-select:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.timezone-select:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(255, 77, 77, 0.25);
+}
+
+@media (max-width: 768px) {
+  .timezone-switcher {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  .timezone-label {
+    margin-bottom: 0.5rem;
+    margin-right: 0;
+  }
+  
+  .timezone-select {
+    width: 100%;
+  }
+} 
